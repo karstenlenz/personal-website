@@ -4,91 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karsten Lenz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>    
-        <h1>Moin, ich bin Karsten Lenz!</h1>
+    <header class ="card card-shadow" id="start">    
+        <h1>Karsten Lenz</h1>
         <nav>
-            <a href="#contact">Kontakt</a>
-            <a href="#bio">Biografie</a>
+            <a href="#intro" class = "navlink">Intro</a>
+            <a href="#contact" class = "navlink">Kontakt</a>
+            <a href="#bio" class = "navlink">Biografie</a>
         </nav>
     </header>
     <main>
-        <section>
-            <figure>
+        <section id ="intro">
+           <figure>
                 <img src="img/portrait.jpg" alt="">
                 <figcaption>So sah ich mal aus.</figcaption>
-            </figure>
-            <h2>Willkommen auf meiner Seite!</h2>
-            <p>Ich bin ein vielseitig interessierter Digital Native mit über 10 Jahren Berufserfahrung als Senior UX Designer, Game Producer und Senior QA Tester. Hier könnt ihr ein bisschen was über mich lesen. Viel Spaß dabei!</p>
-            <h2>Skills</h2>
-            <ul>
-                <li>UX Design</li>
-                <li>Informationsarchitektur</li>
-                <li>Design Thinking</li>
-                <li>Workshop-Moderation</li>
-                <li>Projektmanagement</li>
-                <li>
-                    Sprachen
-                    <ul>
-                    <li>Deutsch: Muttersprache</li>
-                    <li>Englisch: Fließend</li>
-                    <li>Chinesisch: Fortgeschritten</li>
-                    <li>Französisch: Grundkenntnisse</li>
-                    <li>Spanisch: Grundkenntnisse</li>
-                    <li>Russisch: Grundkenntnisse</li>
+            </figure> 
+            <section class ="card card-shadow">
+                <h2>Moin und willkommen auf meiner Seite!</h2>
+                <p>Ich bin ein vielseitig interessierter Digital Native mit über 10 Jahren Berufserfahrung als Senior UX Designer, Game Producer und Senior QA Tester. Hier könnt ihr ein bisschen was über mich lesen. Viel Spaß dabei!</p>
+             </section>
+            <h3>Skills</h3>
+            <ul class = "badge-list">
+                <li class ="badge-item card">Informations-Architektur</li>
+                <li class ="badge-item card">Design Thinking</li>
+                <li class ="badge-item card">UX Design</li>
+                <li class ="badge-item card">Workshop-Moderation</li>
+                <li class ="badge-item card">Projektmanagement</li>
+            </ul>
+            <h3>Sprachen</h3>
+            <ul class = "badge-list">
+                <li class="badge-item card">Deutsch: Muttersprache</li>
+                <li class="badge-item card">Englisch: Fließend</li>
+                <li class="badge-item card">Chinesisch: Fortgeschritten</li>
+                <li class="badge-item card">Französisch: Grundkenntnisse</li>
+                <li class="badge-item card">Spanisch: Grundkenntnisse</li>
+                <li class="badge-item card">Russisch: Grundkenntnisse</li>
                 </ul>
                 </li>
             </ul>
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Gitarre & Bass</li>
-                <li>Games</li>
-                <li>Papa sein (obwohl, eigentlich ist das auch ein Job...)</li>
+            <h3>Hobbies</h3>
+            <ul class ="badge-list">
+                <li class ="badge-item card">Gitarre & Bass</li>
+                <li class ="badge-item card">Games</li>
+                <li class ="badge-item card">Papa sein</li>
             </ul>
         </section>
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <p>So könnt ihr mich erreichen:
-            </p>
-            <section>
-                <p>Telefon: <a href="tel:+123456789">123-456789</a> <br>
+        <section id="contact" class = "card card-shadow">
+                <h2>Kontakt</h2>
+                <p class="contact-link">So könnt ihr mich erreichen: <br><br>
+                Telefon: <a href="tel:+123456789">123-456789</a> <br><br>
                 E-Mail: <a href="mailto:lorem@ipsum.de">lorem@ipsum.de</a>  
                 </p>
+                <section class = "profile-list">
+                    <section class = "badge-item card">
+                        <a href="https://github.com/karstenlenz" target="_blank" rel="noreferrer noopener">
+                            <img class ="logo" src="img/github_logo.svg" alt="">
+                        </a>
+                     </section>
+                     <section class = "badge-item card">
+                        <a  href="https://codepen.io/klenz" target="_blank" rel="noreferrer noopener">
+                        <img class ="logo" src="img/codepen_logo.svg" alt="">
+                        </a>
+                     </section>
+                        <section class = "badge-item card">
+                        <a href="https://www.linkedin.com/in/karstenlenz/" target="_blank" rel="noreferrer noopener">
+                            <img class ="logo" src="img/linkedin_logo.svg" alt="">
+                        </a> 
+                    </section>   
             </section>
-            <section>
-                <a href="https://github.com/karstenlenz" target="_blank" rel="noreferrer noopener">
-                    <img src="img/GitHub_Logo.png" alt="">
-                    <figcaption>GitHub</figcaption>
-                </a>
-                <a href="https://codepen.io/klenz" target="_blank" rel="noreferrer noopener">
-                    <img src="img/codepen_logo.png" alt="">
-                    <figcaption>CodePen</figcaption>
-                </a>
-                <a href="https://www.linkedin.com/in/karstenlenz/" target="_blank" rel="noreferrer noopener">
-                    <img src="img/linkedin_logo.png" alt="">
-                    <figcaption>LinkedIn</figcaption>
-                </a>                
-            </section>
+
         </section>
         <section id="bio">
             <h2>Biografie</h2>
-            <p>Meine wichtigsten Stationen</p>
-            <ul>
-                <li>Seit Mai 2020: <br> Elternzeit, Hamburg</li>
-                <li>Seit August 2015: <br> Senior Konzepter / UX Designer @ Medienwerft, Hamburg</li>
-                <li>August 2014 - Juli 2015: <br> Chinesisch-Student @ Beijing Normal University, Beijing</li>
-                <li>August 2012 - August 2014: <br> Game Producer @ Farbflut Entertainment, Hamburg</li>
-                <li>Januar 2012 - August 2012: <br> Conversion Manager @ Goodgame Studios, Hamburg</li>
-                <li>September 2010 - September 2011: <br>MA-Student @ Goldsmiths, University of London, London</li>
-                <li>April 2010 - August 2010: <br>UX-Design-Praktikant @SinnerSchrader, Hamburg</li>
-                <li>Juni 2008 - Jan 2010: <br>(Senior) QA Tester @ dtp young entertainmen, Hamburg</li>
-                <li>September 2005 - Oktober 2008: <br>BA-Student @ Uni Hamburg, Hamburg</li>
-                <li>August 2005: Abitur @ Wichern-Schule, Hamburg</li>
+            <p>Meine wichtigsten Stationen:</p>
+            <ul class ="timeline">
+                <li class ="card align-left">Seit 05/2020: <br> Elternzeit, Hamburg</li>
+                <li class ="card align-right">Seit 08/2015: <br> Senior Konzepter / UX Designer @ Medienwerft, Hamburg</li>
+                <li class ="card align-left">08/2014 - 07/2015: <br> Chinesisch-Student @ Beijing Normal University, Beijing</li>
+                <li class ="card align-right">08/2012 - 08/2014: <br> Game Producer @ Farbflut Entertainment, Hamburg</li>
+                <li class ="card align-left">01/2012 - 08/2012: <br> Conversion Manager @ Goodgame Studios, Hamburg</li>
+                <li class ="card align-right">09/2010 - 09/2011: <br>MA-Student @ Goldsmiths, University of London, London</li>
+                <li class ="card align-left">04/2010 - 08/2010: <br>UX-Design-Praktikant @SinnerSchrader, Hamburg</li>
+                <li class ="card align-right">06/2008 - 01/2010: <br>(Senior) QA Tester @ dtp young entertainment, Hamburg</li>
+                <li class ="card align-left">09/2005 - 10/2008: <br>BA-Student @ Uni Hamburg, Hamburg</li>
+                <li class ="card align-right">08/2005: <br> Abitur @ Wichern-Schule, Hamburg</li>
             </ul>
         </section>
+    <a href="#start">Zurück zum Anfang</a>
     </main>
-    <footer id="footer">
+    <footer id="footer" class="site-footer">
         <small>
             © Copyright und so 2020
         </small>
