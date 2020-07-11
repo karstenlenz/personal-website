@@ -2,12 +2,17 @@
     box-sizing: border-box; 
 }
 
+html {
+    background: repeating-linear-gradient(45deg, #01BAF0,#01BAF0 80px, #FFC520 80px, #FFC520 160px);
+    max-width: 100%;
+}
+
 body {
     font-size: 112.5%;
     margin: 0.75em 0.75em 0 0.75em;
     font-family: 'Roboto', sans-serif;
-    background-color: #ddd;
-    /* background: linear-gradient(-90deg, rgb(218, 218, 218), white); */
+    /* background: repeating-linear-gradient(45deg, #01BAF0,#01BAF0 80px, #FFC520 80px, #FFC520 160px); */
+    max-width: 1000px;
 }
 
 h1,h2,h3 {
@@ -24,14 +29,14 @@ h2 {
 }
 
 h3 {
-    margin-bottom: -0.5em;
+     margin-bottom: 0;
 }
 
 a {
     color:black;
 }
 
-figure {
+.portrait {
     margin: auto;
     width: 50%;
     margin-bottom: 1em;
@@ -41,15 +46,13 @@ img {
     width:100%;
 }
 
-.navlink {
-    margin-right: 2em;
+.header-contact {
+    display:none;
 }
 
-.site-footer {
-    background-color: white;
-    border-top: 1px solid black;
-    margin: 1em -1em 0px -1em;
-    padding: 1em;
+
+.navlink {
+    margin-right: 1.5em;
 }
 
 .card {
@@ -65,20 +68,26 @@ img {
 }
 
 .badge-list {
-    padding:0;
+    padding: 0 0 0 0;
     display:flex;
     overflow: scroll;
-    justify-content: space-evenly;
-
+    justify-content: flex-start;
+    margin-right: -0.75em;
 }
+
+/* Frage: Wie kriege ich es hin, dass beim letzten Element noch ein Abstand nach rechts ist, wenn man zum Rand gescrollt hat?*/
+
+
 .badge-item {
     list-style: none;
     margin-right: 1em;
+   white-space: nowrap;
 }
 
 .profile-list {
     display:flex;
     overflow: scroll;
+    margin-right: -0.75em;
 }
 
 .contact-link {
@@ -86,7 +95,7 @@ img {
 }
 
 .logo {
-    width:40vw;
+    width:10em;
 }
 
 .language-item {
@@ -117,4 +126,96 @@ img {
     text-align: right;
     grid-column: 2/-1;
     grid-row:  span 2;
+}
+
+.site-footer {
+    background-color: white;
+    border-top: 1px solid black;
+    margin: 1em -1em 0px -1em;
+    padding: 1em;
+}
+
+@media screen and (min-width: 580px){
+
+    .intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .fill-columns {
+        grid-column: 1/-1;
+        overflow:scroll;
+        margin-right: -1em;
+    }
+    .portrait {
+        /* width: 100%;  */
+        margin:auto;
+    }
+
+    .contact{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .contact-link {
+        min-width: 40%;
+    }
+
+    .profile-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+        flex-wrap: wrap;
+        overflow: auto;
+        margin-left: 1em;
+        margin-top: 1em;
+    } 
+
+    .logo {
+        width: auto;
+        height: 1.5em;
+    }  
+}
+
+@media screen and (min-width:700px){
+    .align-left {
+        grid-column: 2/-3;
+        grid-row:  span 2;
+    }
+    
+    .align-right {
+        text-align: right;
+        grid-column: 3/-2;
+        grid-row:  span 2;
+    }
+    .header-contact {
+        font-size:1.25em;
+        display: flex;
+        text-align: right;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        max-width:30%;
+        margin-left:auto;
+        margin-top:-2.25em;
+        row-gap: 1em;
+        float: right;
+    }
+
+    nav {
+        display: inline;
+    }
+}
+
+@media screen and (min-width:900px){
+    body {
+    margin: 0.75em auto 0 auto;
+    font-size: 125%;
+    }
+
+    .badge-list {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
 }
