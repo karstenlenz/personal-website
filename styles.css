@@ -3,20 +3,23 @@
 }
 
 html {
-    background: repeating-linear-gradient(45deg, #01BAF0,#01BAF0 80px, #FFC520 80px, #FFC520 160px);
+    background: repeating-linear-gradient(45deg, rgba(0,75,135, 0.5),rgb(0,75,135) 80px, rgba(255,205,0, 0.5) 80px, rgb(255,205,0) 160px);
     max-width: 100%;
+    background-attachment: fixed;
+    height: 100%;
 }
 
 body {
     font-size: 112.5%;
     margin: 0.75em 0.75em 0 0.75em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     /* background: repeating-linear-gradient(45deg, #01BAF0,#01BAF0 80px, #FFC520 80px, #FFC520 160px); */
     max-width: 1000px;
+    color: #004B87;
 }
 
-h1,h2,h3 {
-    font-family: 'Roboto Slab', serif;
+h1,h2,h3,h4 {
+    font-family: 'Fredoka One', cursive;
 }
 
 h1 {
@@ -33,7 +36,7 @@ h3 {
 }
 
 a {
-    color:black;
+     color:#004B87;
 }
 
 .portrait {
@@ -56,15 +59,21 @@ img {
 }
 
 .card {
-    border: 1px solid  black;
+    border: 1px solid  #004B87;
     border-radius: 5px;
-    padding: 0.75em;
+    padding: 1em;
     margin-bottom: 1em;
-    background-color: white;
+    background-color: #FFCD00;
 }
 
 .card-shadow {
-    box-shadow: 10px 5px black;
+    box-shadow: 10px 5px #004B87;
+}
+
+.skillcard {
+    grid-column: 1/-1;
+    margin-top: 1em;
+    max-width: 100%;
 }
 
 .badge-list {
@@ -81,7 +90,8 @@ img {
 .badge-item {
     list-style: none;
     margin-right: 1em;
-   white-space: nowrap;
+    white-space: nowrap;
+    background-color: white;
 }
 
 .profile-list {
@@ -115,6 +125,7 @@ img {
     border: 1px solid  black;
     border-radius: 5px;
     padding: 0.75em;
+    background-color: white;
 }
 
 .align-left {
@@ -130,9 +141,17 @@ img {
 
 .site-footer {
     background-color: white;
-    border-top: 1px solid black;
+    border: 1px solid black;
+    border-radius: 5px;
     margin: 1em -1em 0px -1em;
     padding: 1em;
+}
+
+.btp {
+    margin: auto;
+    display:block;
+    max-width: 12em;
+    text-align: center;
 }
 
 @media screen and (min-width: 580px){
@@ -145,8 +164,7 @@ img {
 
     .fill-columns {
         grid-column: 1/-1;
-        overflow:scroll;
-        margin-right: -1em;
+        max-width: 100%;
     }
     .portrait {
         /* width: 100%;  */

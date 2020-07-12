@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karsten Lenz</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header class ="card card-shadow" id="start">    
@@ -15,10 +15,10 @@
             <a href="#contact" class = "navlink">Kontakt</a>
             <a href="#bio" class = "navlink">Biografie</a>
         </nav>
-        <section class = "header-contact">
+        <div class = "header-contact">
         <a href="tel:+123456789">☎ 123-456789</a>
         <a href="mailto:lorem@ipsum.de">✉ lorem@ipsum.de</a>
-        </section>  
+        </div>  
     </header>
     <main>
         <section id ="intro" class ="intro">
@@ -26,41 +26,44 @@
                 <img src="img/portrait.jpg" alt="">
                 <figcaption>So sah ich mal aus.</figcaption>
             </figure> 
-            <section class ="card card-shadow intro-text">
+            <div class ="card card-shadow intro-text">
                 <h2>Moin und willkommen auf meiner Seite!</h2>
                 <p>Ich bin ein vielseitig interessierter Digital Native mit über 10 Jahren Berufserfahrung als Senior UX Designer, Game Producer und Senior QA Tester. Hier könnt ihr ein bisschen was über mich lesen. Viel Spaß dabei!</p>
-             </section>
-             <section class = "fill-columns">
-                <h3>Skills</h3>
-                <ul class = "badge-list">
-                    <li class ="badge-item card">Informations-Architektur</li>
-                    <li class ="badge-item card">Design Thinking</li>
-                    <li class ="badge-item card">UX Design</li>
-                    <li class ="badge-item card">Workshop-Moderation</li>
-                    <li class ="badge-item card">Projektmanagement</li>
-                </ul>
-            </section>
-            <section class = "fill-columns">
-                <h3>Sprachen</h3>
-                <ul class = "badge-list">
-                    <li class="badge-item card">Deutsch: Muttersprache</li>
-                    <li class="badge-item card">Englisch: Fließend</li>
-                    <li class="badge-item card">Chinesisch: Fortgeschritten</li>
-                    <li class="badge-item card">Französisch: Grundkenntnisse</li>
-                    <li class="badge-item card">Spanisch: Grundkenntnisse</li>
-                    <li class="badge-item card">Russisch: Grundkenntnisse</li>
+            </div>
+             <div class ="skillcard card card-shadow">
+                 <h2>Skills & Co.</h2>
+                <div class = "fill-columns">
+                    <h3>Skills</h3>
+                    <ul class = "badge-list">
+                        <li class ="badge-item card">Informations-Architektur</li>
+                        <li class ="badge-item card">Design Thinking</li>
+                        <li class ="badge-item card">UX Design</li>
+                        <li class ="badge-item card">Workshop-Moderation</li>
+                        <li class ="badge-item card">Projektmanagement</li>
                     </ul>
-                    </li>
-                </ul>
-            </section>
-            <section class = "fill-columns">
-                <h3>Hobbies</h3>
-                <ul class ="badge-list">
-                    <li class ="badge-item card">Gitarre & Bass</li>
-                    <li class ="badge-item card">Games</li>
-                    <li class ="badge-item card">Papa sein</li>
-                </ul>
-            </section>
+                </div>
+                <div class = "fill-columns">
+                    <h3>Sprachen</h3>
+                    <ul class = "badge-list">
+                        <li class="badge-item card">Deutsch: Muttersprache</li>
+                        <li class="badge-item card">Englisch: Fließend</li>
+                        <li class="badge-item card">Chinesisch: Fortgeschritten</li>
+                        <li class="badge-item card">Französisch: Grundkenntnisse</li>
+                        <li class="badge-item card">Spanisch: Grundkenntnisse</li>
+                        <li class="badge-item card">Russisch: Grundkenntnisse</li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "fill-columns">
+                    <h3>Hobbies</h3>
+                    <ul class ="badge-list">
+                        <li class ="badge-item card">Gitarre & Bass</li>
+                        <li class ="badge-item card">Games</li>
+                        <li class ="badge-item card">Papa sein</li>
+                    </ul>
+                </div>
+             </div>
         </section>
         <section id="contact" class = "card card-shadow">
                 <h2>Kontakt</h2>
@@ -90,7 +93,7 @@
 
         </section>
         <section id="bio">
-        <div class="card"> 
+        <div class="card card-shadow"> 
             <h2>Biografie</h2>
             <h3>Meine wichtigsten Stationen:</h3>
         
@@ -108,7 +111,7 @@
             </ul>
         </div> 
         </section>
-    <a href="#start">Zurück zum Anfang</a>
+    <a href="#start" class="card btp">Zurück zum Anfang</a>
     </main>
     <footer id="footer" class="site-footer">
         <small>
