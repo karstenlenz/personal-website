@@ -1,241 +1,247 @@
 * {
-    box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 html {
-    /* background: repeating-linear-gradient(45deg, rgba(0,75,135, 0.5),rgb(0,75,135) 80px, rgba(255,205,0, 0.5) 80px, rgb(255,205,0) 160px); */
-    background: repeating-linear-gradient(45deg, rgba(0,75,135, 0.7), rgba(0,75,135, 0.5) 80px, rgba(0,75,135, 0.85) 80px,rgba(0,75,135, 1) 160px);
-
-    max-width: 100%;
-    background-attachment: fixed;
-    height: 100%;
+  /* background: repeating-linear-gradient(45deg, rgba(0,75,135, 0.5),rgb(0,75,135) 80px, rgba(255,205,0, 0.5) 80px, rgb(255,205,0) 160px); */
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 75, 135, 0.7),
+    rgba(0, 75, 135, 0.5) 80px,
+    rgba(0, 75, 135, 0.85) 80px,
+    rgba(0, 75, 135, 1) 160px
+  );
+  max-width: 100%;
+  background-attachment: fixed;
+  height: 100%;
 }
 
 body {
-    font-size: 112.5%;
-    margin: 0.75em 0.75em 0 0.75em;
-    font-family: 'Raleway', sans-serif;
-    /* background: repeating-linear-gradient(45deg, #01BAF0,#01BAF0 80px, #FFC520 80px, #FFC520 160px); */
-    max-width: 1000px;
-    color: #004B87;
+  font-size: 112.5%;
+  margin: 0.75em 0.75em 0 0.75em;
+  font-family: 'Raleway', sans-serif;
+  /* background: repeating-linear-gradient(45deg, #01BAF0,#01BAF0 80px, #FFC520 80px, #FFC520 160px); */
+  max-width: 1000px;
+  color: #004b87;
 }
 
-h1,h2,h3,h4 {
-    font-family: 'Fredoka One', cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Fredoka One', cursive;
 }
 
 h1 {
-    margin: 0 0 0.5em 0;
+  margin: 0 0 0.5em 0;
 }
 
 h2 {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
-     margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 a {
-     color:#004B87;
+  color: #004b87;
 }
 
 .portrait {
-    margin: auto;
-    width: 50%;
-    margin-bottom: 1em;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 1em;
 }
 
 img {
-    width:100%;
+  width: 100%;
 }
 
 .header-contact {
-    display:none;
+  display: none;
 }
 
-
 .navlink {
-    margin-right: 1.5em;
+  margin-right: 1.5em;
 }
 
 .card {
-    border: 1px solid  #004B87;
-    border-radius: 5px;
-    padding: 1em;
-    margin-bottom: 1em;
-    background-color: #FFCD00;
+  border: 1px solid #004b87;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #ffcd00;
 }
 
 .card-shadow {
-    box-shadow: 10px 5px #004B87;
+  box-shadow: 10px 5px #004b87;
 }
 
 .skillcard {
-    grid-column: 1/-1;
-    margin-top: 1em;
-    max-width: 100%;
+  grid-column: 1/-1;
+  margin-top: 1em;
+  max-width: 100%;
 }
 
 .badge-list {
-    padding: 0 0 0 0;
-    display:flex;
-    overflow: scroll;
-    justify-content: flex-start;
-    margin-right: -0.75em;
+  padding: 0 0 0 0;
+  display: flex;
+  overflow: scroll;
+  justify-content: flex-start;
+  margin-right: -0.75em;
 }
 
 /* Frage: Wie kriege ich es hin, dass beim letzten Element noch ein Abstand nach rechts ist, wenn man zum Rand gescrollt hat?*/
 
-
 .badge-item {
-    list-style: none;
-    margin-right: 1em;
-    white-space: nowrap;
-    background-color: white;
+  list-style: none;
+  margin-right: 1em;
+  white-space: nowrap;
+  background-color: white;
 }
 
 .profile-list {
-    display:flex;
-    overflow: scroll;
-    margin-right: -0.75em;
+  display: flex;
+  overflow: scroll;
+  margin-right: -0.75em;
 }
 
 .contact-link {
-    line-height: 1em;
+  line-height: 1em;
 }
 
 .logo {
-    width:10em;
+  width: 10em;
 }
 
 .language-item {
-    list-style: none;
+  list-style: none;
 }
 
 .timeline {
-    display:grid;
-    list-style: none;
-    padding:0;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, auto);
-    background: linear-gradient(#000, #000) no-repeat center/4px 100%;
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, auto);
+  background: linear-gradient(rgb(0, 75, 135), rgb(0, 75, 135)) no-repeat
+    center/4px 100%;
 }
 .timeline li {
-    margin: 0.75em 0 0.75em 0;
-    border: 1px solid  black;
-    border-radius: 5px;
-    padding: 0.75em;
-    background-color: white;
+  margin: 0.75em 0 0.75em 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.75em;
+  background-color: white;
 }
 
 .align-left {
-    grid-column: 1/-2;
-    grid-row:  span 2;
+  grid-column: 1/-2;
+  grid-row: span 2;
 }
 
 .align-right {
-    text-align: right;
-    grid-column: 2/-1;
-    grid-row:  span 2;
+  text-align: right;
+  grid-column: 2/-1;
+  grid-row: span 2;
 }
 
 .site-footer {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 1em -1em 0px -1em;
-    padding: 1em;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1em -1em 0px -1em;
+  padding: 1em;
 }
 
 .btp {
+  margin: auto;
+  display: block;
+  max-width: 12em;
+  text-align: center;
+}
+
+@media screen and (min-width: 580px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .fill-columns {
+    grid-column: 1/-1;
+    max-width: 100%;
+  }
+  .portrait {
+    /* width: 100%;  */
     margin: auto;
-    display:block;
-    max-width: 12em;
-    text-align: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .contact-link {
+    min-width: 40%;
+  }
+
+  .profile-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    overflow: auto;
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+
+  .logo {
+    width: auto;
+    height: 1.5em;
+  }
 }
 
-@media screen and (min-width: 580px){
+@media screen and (min-width: 700px) {
+  .align-left {
+    grid-column: 2/-3;
+    grid-row: span 2;
+  }
 
-    .intro{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, auto);
-    }
+  .align-right {
+    text-align: right;
+    grid-column: 3/-2;
+    grid-row: span 2;
+  }
+  .header-contact {
+    font-size: 1.25em;
+    display: flex;
+    text-align: right;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 30%;
+    margin-left: auto;
+    margin-top: -2.25em;
+    row-gap: 1em;
+    float: right;
+  }
 
-    .fill-columns {
-        grid-column: 1/-1;
-        max-width: 100%;
-    }
-    .portrait {
-        /* width: 100%;  */
-        margin:auto;
-    }
-
-    .contact{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .contact-link {
-        min-width: 40%;
-    }
-
-    .profile-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: baseline;
-        flex-wrap: wrap;
-        overflow: auto;
-        margin-left: 1em;
-        margin-top: 1em;
-    } 
-
-    .logo {
-        width: auto;
-        height: 1.5em;
-    }  
+  nav {
+    display: inline;
+  }
 }
 
-@media screen and (min-width:700px){
-    .align-left {
-        grid-column: 2/-3;
-        grid-row:  span 2;
-    }
-    
-    .align-right {
-        text-align: right;
-        grid-column: 3/-2;
-        grid-row:  span 2;
-    }
-    .header-contact {
-        font-size:1.25em;
-        display: flex;
-        text-align: right;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        max-width:30%;
-        margin-left:auto;
-        margin-top:-2.25em;
-        row-gap: 1em;
-        float: right;
-    }
-
-    nav {
-        display: inline;
-    }
-}
-
-@media screen and (min-width:900px){
-    body {
+@media screen and (min-width: 900px) {
+  body {
     margin: 0.75em auto 0 auto;
     font-size: 125%;
-    }
+  }
 
-    .badge-list {
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
+  .badge-list {
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
 }
